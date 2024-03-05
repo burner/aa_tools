@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/aa_tools
+aa_tools.so
+aa_tools.dylib
+aa_tools.dll
+aa_tools.a
+aa_tools.lib
+aa_tools-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst

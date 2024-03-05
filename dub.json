@@ -1,0 +1,9 @@
+{
+	"authors": [
+		"Robert burner Schadek"
+	],
+	"copyright": "Copyright © 2024, Robert burner Schadek",
+	"description": "Functions to make use of nested associative array's easier",
+	"license": "BSL-1.0",
+	"name": "aa_tools"
+}
