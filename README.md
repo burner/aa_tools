@@ -10,3 +10,8 @@ arguments.
 ```dlang
 void nestedInsert(AA,T,Args...)(ref AA aa, auto ref T toInsert, Args args) {
 ```
+
+Combine `into` and `toInsert` in `into`.
+```dlang
+void insertInto(AA)(ref AA into, ref AA toInsert) {
+```

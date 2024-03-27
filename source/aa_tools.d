@@ -72,3 +72,18 @@ void nestedInsert(AA,T,Args...)(ref AA aa, auto ref T toInsert, Args args) {
 	assert(p !is null);
 	assert(*p == 10);
 }
+
+void insertInto(AA)(ref AA into, ref AA toInsert) {
+	foreach(key, ref value; toInsert) {
+		into.require(key, value);
+	}
+}
+
+@safe unittest {
+	long[string] aa = ["a" : 10, "b": 20 ];
+	long[string] bb = ["a" : 10, "c": 30 ];
+	insertInto(aa, bb);
+	assert(aa["a"] == 10);
+	assert(aa["b"] == 20);
+	assert(aa["c"] == 30);
+}
